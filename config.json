@@ -9,6 +9,6 @@
   "note": "you can also use Mysql if you put mysql://user:pass@localhost:3306/dbname into databaseURL!",
   "databaseURL": "sqlite://skyport.db",
   "databaseTable": "skyport",
-  "ogTitle": "Worldcraft Panel",
-  "ogDescription": "This is an instance of the Worldcraft Panel - learn more at github.com/Worldcraftlink"
+  "ogTitle": "Skyport Panel",
+  "ogDescription": "This is an instance of the Skyport Panel - learn more at github.com/skyportlabs"
 }
