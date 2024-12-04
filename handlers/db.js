@@ -8,14 +8,14 @@ let db;
 
 if (config.databaseURL.startsWith('sqlite')) {
     const Keyv = require('keyv');
-    db = new Keyv('sqlite://skyport.db');
+    db = new Keyv('sqlite://WorldcrafP.db');
 } else {
     const Keyv = require('@keyvhq/core');
     const KeyvMysql = require('@keyvhq/mysql');
 
     const mysqlConfig = {
         url: config.databaseURL,
-        table: 'skyport',
+        table: 'WorldcraftP',
         keySize: 255,
     };
 
