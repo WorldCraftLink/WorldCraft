@@ -1,3 +1,4 @@
+
 const config = require('../config.json');
 
 if (!config.databaseURL) {
