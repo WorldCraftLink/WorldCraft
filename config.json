@@ -6,8 +6,8 @@
   "mode": "production",
   "version": "0.3.0",
   "note": "you can also use Mysql if you put mysql://user:pass@localhost:3306/dbname into databaseURL!",
-  "databaseURL": "sqlite://skyport.db",
-  "databaseTable": "Worldcraftlink",
+  "databaseURL": "sqlite://WorldcraftP.db",
+  "databaseTable": "WorldcraftP",
   "ogTitle": "Worldcraftlink Panel",
   "ogDescription": "This is an instance of the Worldcraftlink Panel - learn more at github.com/Worldcraftlink"
 }
