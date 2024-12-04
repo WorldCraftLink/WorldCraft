@@ -1,10 +1,11 @@
+
 {
-  "name": "WorldCraftLink",
-  "version": "2.1.0",
-  "description": "WorldCraftLink is an open source panel for managing and operating game servers and applications built using Node.js with Express and Dockerode.",
+  "name": "worldcraftlink",
+  "version": "0.3.0",
+  "description": "Worldcraftlink is an open source panel for managing and operating game servers and applications built using Node.js with Express and Dockerode.",
   "main": "index.js",
   "bin": {
-    "WorldCraftLink": "./exec/bin/index.js"
+    "skyport": "./exec/bin/index.js"
   },
   "scripts": {
     "start": "node index.js",
@@ -15,7 +16,7 @@
     "createUser": "node exec/createUser.js",
     "build:css": "npx tailwindcss -i ./public/tw.conf -o ./public/assets/tailwind.css --watch"
   },
-  "author": "WorldCraftLink",
+  "author": "Worldcraftlink",
   "license": "ISC",
   "dependencies": {
     "@keyv/sqlite": "^3.6.7",
