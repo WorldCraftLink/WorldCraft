@@ -1,6 +1,6 @@
 node_modules/
 public/assets/logo.png
-skyport.db
+WorldCraftP.db
 sessions.db
 package-lock.json
 tmp/
