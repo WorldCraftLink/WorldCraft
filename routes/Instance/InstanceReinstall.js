@@ -74,7 +74,7 @@ async function prepareRequestData(image, memory, cpu, ports, name, node, id, con
         method: 'post',
         url: `http://${node.address}:${node.port}/instances/reinstall/${containerId}/${id}`,
         auth: {
-            username: 'worldcraftp',
+            username: 'Skyport',
             password: node.apiKey
         },
         headers: { 

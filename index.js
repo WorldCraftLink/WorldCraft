@@ -223,11 +223,11 @@ app.set('views', [path.join(__dirname, 'views'), ...PluginViewsDir]);
 init();
 
 console.log(chalk.gray(ascii) + chalk.white(`version v${config.version}\n`));
-app.listen(config.port, () => log.info(`WorldCraftP is listening on port ${config.port}`));
+app.listen(config.port, () => log.info(`WorldCraftP-premium is listening on port ${config.port}`));
 
 app.get('*', async function(req, res){
   res.render('errors/404', {
     req,
-    name: await db.get('name') || 'WorldCraftP'
+    name: await db.get('name') || 'WorldCraftP-premium'
   })
 });

@@ -1,9 +1,10 @@
 node_modules/
 public/assets/logo.png
-WorldCraftP.db
+WorldCraftP-premium.db
 sessions.db
 package-lock.json
 tmp/
 bs-config.json
+plugins/plugins.json
 bun.lockb
 config.json

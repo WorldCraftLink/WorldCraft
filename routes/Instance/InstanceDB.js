@@ -102,7 +102,7 @@ router.post("/instance/:id/db/create/:name", async (req, res) => {
             method: 'post',
             url: `http://${instance.Node.address}:${instance.Node.port}/database/create/${encodeURIComponent(name)}`,
             auth: {
-                username: 'worldcraftp',
+                username: 'Skyport',
                 password: instance.Node.apiKey
             },
             headers: { 

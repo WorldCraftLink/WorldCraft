@@ -36,7 +36,7 @@ async function seed() {
 
 async function performSeeding() {
   try {
-    const imagesIndexResponse = await axios.get('https://raw.githubusercontent.com/WorldCraftLink/WorldCraftImages_v3/refs/heads/main/seed/0.1.0-beta2.json');
+    const imagesIndexResponse = await axios.get('https://raw.githubusercontent.com/WorldCraftLink/Images_v3/refs/heads/main/seed/0.1.0-beta3.json');
     const imageUrls = imagesIndexResponse.data;
     let imageDataArray = [];
 
