@@ -6,8 +6,8 @@ const log = new (require('cat-loggr'))();
 async function init() {
     const skyport = await db.get('skyport_instance');
     if (!skyport) {
-        log.init('This is probably your first time starting Skyport, welcome!');
-        log.init('You can find documentation for the panel at skyport.dev');
+        log.init('This is probably your first time starting WorldCraft, welcome!');
+        log.init('You can find documentation for the panel at WorldCraftLink.dev');
 
         const errorMessages = [];
 
@@ -29,17 +29,17 @@ async function init() {
         }
 
 
-        const skyportId = uuidv4();
+        const WorldCraftLinkId = uuidv4();
         const setupTime = Date.now();
         
         const info = {
-            skyportId: skyportId,
+            WorldCraftLinkId: WorldCraftLinkId,
             setupTime: setupTime,
             originalVersion: config.version
         };
 
         await db.set('skyport_instance', info);
-        log.info('Initialized Skyport panel with ID: ' + skyportId);
+        log.info('Initialized Skyport panel with ID: ' + WorldCraftLinkId);
     }
     log.info('Init complete!');
 }
