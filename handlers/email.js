@@ -53,7 +53,7 @@ async function sendEmail(mailOptions) {
 async function sendWelcomeEmail(email, username, password) {
   const { name } = await getSMTPSettings();
   const mailOptions = {
-    from: `${name} <${name}@skyport.dev>`,
+    from: `${name} <${name}@WorldCraftlink.dev>`,
     to: email,
     subject: `Welcome to ${name}`,
     html: getWelcomeEmailHTML(username, password, name),

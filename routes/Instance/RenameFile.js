@@ -40,7 +40,7 @@ router.get("/instance/:id/files/rename/:file/:newfile", async (req, res) => {
             method: 'post',
             url: `http://${instance.Node.address}:${instance.Node.port}/fs/${instance.VolumeId}/files/rename/${file}/${newfile}${query}`,
             auth: {
-                username: 'Skyport',
+                username: 'WorldCraftP',
                 password: instance.Node.apiKey
             },
             headers: { 

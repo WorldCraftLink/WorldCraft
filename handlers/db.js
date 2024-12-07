@@ -9,14 +9,14 @@ let db;
 
 if (config.databaseURL.startsWith('sqlite')) {
     const Keyv = require('keyv');
-    db = new Keyv('sqlite://WorldCraftP-premium.db');
+    db = new Keyv('sqlite://WorldCraftP.db');
 } else {
     const Keyv = require('@keyvhq/core');
     const KeyvMysql = require('@keyvhq/mysql');
 
     const mysqlConfig = {
         url: config.databaseURL,
-        table: 'WorldCraftP-premium',
+        table: 'WorldCraftP',
         keySize: 255,
     };
 

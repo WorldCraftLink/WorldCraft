@@ -33,13 +33,13 @@ async function init() {
         const setupTime = Date.now();
         
         const info = {
-            skyportId: skyportId,
+            skyportId: WorldCraftLinkid,
             setupTime: setupTime,
             originalVersion: config.version
         };
 
         await db.set('skyport_instance', info);
-        log.info('Initialized Skyport panel with ID: ' + skyportId);
+        log.info('Initialized Skyport panel with ID: ' + WorldCraftLinkid);
     }
     log.info('Init complete!');
 }

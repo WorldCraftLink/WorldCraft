@@ -175,7 +175,7 @@ async function prepareRequestData(image, memory, cpu, ports, name, node, id, con
         method: 'post',
         url: `http://${node.address}:${node.port}/instances/redeploy/${containerId}/${id}`,
         auth: {
-            username: 'Skyport',
+            username: 'WorldCraftP',
             password: node.apiKey
         },
         headers: { 

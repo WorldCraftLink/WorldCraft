@@ -6,7 +6,7 @@ class FileOperations {
     this.instance = instance;
     this.baseUrl = `http://${instance.Node.address}:${instance.Node.port}/fs/${instance.VolumeId}`;
     this.auth = {
-      username: 'Skyport',
+      username: 'WorldCraftP',
       password: instance.Node.apiKey
     };
   }
