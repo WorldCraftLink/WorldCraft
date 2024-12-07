@@ -5,6 +5,5 @@ sessions.db
 package-lock.json
 tmp/
 bs-config.json
-plugins/plugins.json
 bun.lockb
 config.json
