@@ -228,6 +228,6 @@ app.listen(config.port, () => log.info(`WorldCraftP-premium is listening on port
 app.get('*', async function(req, res){
   res.render('errors/404', {
     req,
-    name: await db.get('name') || 'WorldCraftP-premium'
+    name: await db.get('name') || 'WorldCraftP'
   })
 });

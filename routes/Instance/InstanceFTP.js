@@ -44,7 +44,7 @@ router.get("/instance/:id/ftp", async (req, res) => {
             method: 'get',
             url: `http://${instance.Node.address}:${instance.Node.port}/ftp/info/${instance.VolumeId}`,
             auth: {
-                username: 'Skyport',
+                username: 'WorldCraftP',
                 password: instance.Node.apiKey
             },
             headers: { 
