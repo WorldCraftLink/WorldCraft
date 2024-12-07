@@ -4,7 +4,7 @@ const config = require('../config.json');
 
 async function getSMTPSettings() {
   const smtpSettings = await db.get('smtp_settings');
-  const name = await db.get('name') || 'Skyport';
+  const name = await db.get('name') || 'WorldCraftP';
 
   if (!smtpSettings) {
     throw new Error('SMTP settings not found');

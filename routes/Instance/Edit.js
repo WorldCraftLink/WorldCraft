@@ -50,7 +50,7 @@ function prepareEditRequestData(instance, Image, Memory, Cpu) {
     method: 'put',
     url: `http://${node.address}:${node.port}/instances/edit/${instance.ContainerId}`,
     auth: {
-      username: 'Skyport',
+      username: 'WorldCraftP',
       password: node.apiKey
     },
     headers: { 

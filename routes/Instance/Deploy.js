@@ -79,7 +79,7 @@ async function prepareRequestData(image, memory, cpu, ports, name, node, Id, var
     method: 'post',
     url: `http://${node.address}:${node.port}/instances/create`,
     auth: {
-      username: 'Skyport',
+      username: 'WorldCraftP',
       password: node.apiKey,
     },
     headers: {
