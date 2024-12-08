@@ -1,15 +1,3 @@
-/*           
- *  WorldCraftLink Panel 0.3.0 (Oz)
- *  (c) 2024 Matt James and contributors
- * 
-*/
-
-/**
- * @fileoverview Main server file for WorldCraftLink Panel. Sets up the express application,
- * configures middleware for sessions, body parsing, and websocket enhancements, and dynamically loads route
- * modules. This file also sets up the server to listen on a configured port and initializes logging.
- */
-
 const express = require('express');
 const session = require('express-session');
 const passport = require('passport');
@@ -222,12 +210,15 @@ app.set('views', [path.join(__dirname, 'views'), ...PluginViewsDir]);
 // Init
 init();
 
-console.log(chalk.gray(ascii) + chalk.white(`version v${config.version}\n`));
-app.listen(config.port, () => log.info(`WorldCraftP is listening on port ${config.port}`));
+app.use(express.static('public'));
+app.listen(config.port, () => log.info(`HydraPanel is listening on port ${config.port}`));
+//console.log(chalk.gray(ascii) + chalk.white(`version v${config.version}\n`));
+//app.listen(config.port, () => log.info(`WorldCraftP is listening on port ${config.port}`));
 
 app.get('*', async function(req, res){
   res.render('errors/404', {
     req,
     name: await db.get('name') || 'WorldCraftP'
+    logo: await db.get('logo') || false
   })
 });

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<div id="container-8e1a57faa98fc2e62d1f6a7218777bd0"></div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= name %></title>
@@ -222,7 +223,7 @@
             <!-- Header -->
             <div class="flex items-center mt-2 mb-4 py-2 mx-2 border-b border-white/5">
                 <button
-                    onclick="window.location.href='/logout'"
+                    onclick="window.location.href='/account'"
                     class="flex items-center gap-1.5 w-full px-3 py-1.5 text-zinc-400 cursor-pointer hover:bg-white/5 transition rounded-md">
                     <div class="flex items-center gap-1.5">
                         
@@ -242,37 +243,36 @@
 
   <!-- Project Section -->
   <div class="mt-4">
-      <div class="px-3 py-1.5 text-xs text-white/50 font-mono uppercase">Panel</div>
-      <a href="../instances"
-          class="flex items-center gap-2 px-4 py-2 text-white/70 hover:bg-white/5 transition rounded-lg">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-              viewBox="0 0 24 24" class="w-4 h-4" color="currentColor">
-              <path fill="currentColor" fill-rule="evenodd"
-                  d="M5.161 7h7.678c.527 0 .981 0 1.356.03.395.033.789.104 1.167.297a3 3 0 011.311 1.311c.193.378.264.772.296 1.167.031.375.031.83.031 1.356v7.678c0 .527 0 .982-.03 1.356-.033.395-.104.789-.297 1.167a3 3 0 01-1.311 1.311c-.378.193-.772.264-1.167.296-.375.031-.83.031-1.356.031H5.16c-.527 0-.981 0-1.356-.03-.395-.033-.789-.104-1.167-.297a3 3 0 01-1.311-1.311c-.193-.378-.264-.772-.296-1.167C1 19.82 1 19.365 1 18.838v-7.677c0-.527 0-.981.03-1.356.033-.395.104-.789.297-1.167a3 3 0 011.311-1.311c.378-.193.772-.264 1.167-.296C4.18 7 4.635 7 5.161 7z"
-                  clip-rule="evenodd"></path>
-              <path fill="currentColor"
-                  d="M18.838 1h-7.677c-.527 0-.981 0-1.356.03-.395.033-.789.104-1.167.297a3 3 0 00-1.311 1.311c-.193.378-.264.772-.296 1.167C7.003 4.141 7 4.541 7 5h5.88c.49 0 1.02 0 1.478.037.519.043 1.205.148 1.912.508a5 5 0 012.185 2.185c.36.707.465 1.393.508 1.912.037.459.037.989.037 1.477V17c.459 0 .86-.003 1.195-.03.395-.033.789-.104 1.167-.297a3 3 0 001.311-1.311c.193-.378.264-.772.296-1.167.031-.375.031-.83.031-1.356V5.16c0-.527 0-.981-.03-1.356-.033-.395-.104-.789-.297-1.167a3 3 0 00-1.311-1.311c-.378-.193-.772-.264-1.167-.296C19.82 1 19.365 1 18.838 1z">
-              </path>
-          </svg>
-          <span class="text-sm">Instances</span>
-      </a>
-      
-      <a href="../account"
-          class="flex items-center gap-2 px-4 py-2 text-white/70 hover:bg-white/5 transition rounded-lg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-              class="size-4">
-              <path fill-rule="evenodd"
-                  d="M15.75 1.5a6.75 6.75 0 0 0-6.651 7.906c.067.39-.032.717-.221.906l-6.5 6.499a3 3 0 0 0-.878 2.121v2.818c0 .414.336.75.75.75H6a.75.75 0 0 0 .75-.75v-1.5h1.5A.75.75 0 0 0 9 19.5V18h1.5a.75.75 0 0 0 .53-.22l2.658-2.658c.19-.189.517-.288.906-.22A6.75 6.75 0 1 0 15.75 1.5Zm0 3a.75.75 0 0 0 0 1.5A2.25 2.25 0 0 1 18 8.25a.75.75 0 0 0 1.5 0 3.75 3.75 0 0 0-3.75-3.75Z"
-                  clip-rule="evenodd" />
-          </svg>
-          <span class="text-sm">Account</span>
-      </a>
-      <% if (req.user.admin === true) { %>
+      <div class="px-3 py-1.5 text-xs text-white/50 font-mono uppercase">ADMIN</div>
       <a href="/admin/overview"
           class="flex items-center gap-2 px-4 py-2 text-white/70 hover:bg-white/5 transition rounded-lg">
-          <span class="text-sm">Admin</span>
+          <span class="text-sm">Overview</span>
       </a>
-      <% } %>
+      <a href="/admin/settings"
+          class="flex items-center gap-2 px-4 py-2 text-white/70 hover:bg-white/5 transition rounded-lg">
+          <span class="text-sm">Settings</span>
+      </a>
+      <a href="/admin/nodes"
+          class="flex items-center gap-2 px-4 py-2 text-white/70 hover:bg-white/5 transition rounded-lg">
+          <span class="text-sm">Nodes</span>
+      </a>
+      <a href="/admin/instances"
+          class="flex items-center gap-2 px-4 py-2 text-white/70 hover:bg-white/5 transition rounded-lg">
+          <span class="text-sm">Servers</span>
+      </a>
+      <a href="/admin/images"
+      class="flex items-center gap-2 px-4 py-2 text-white/70 hover:bg-white/5 transition rounded-lg">
+      <span class="text-sm">Images</span>
+  </a>
+  <a href="/admin/users"
+  class="flex items-center gap-2 px-4 py-2 text-white/70 hover:bg-white/5 transition rounded-lg">
+  <span class="text-sm">Users</span>
+</a>
+<a href="/admin/apikeys"
+  class="flex items-center gap-2 px-4 py-2 text-white/70 hover:bg-white/5 transition rounded-lg">
+  <span class="text-sm">Application API</span>
+</a>
+     
   </div>
 </div>
 </aside>
